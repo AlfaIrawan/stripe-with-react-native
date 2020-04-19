@@ -4,6 +4,5 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate, RCTBridgeDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
-@property (nonatomic, strong) UIViewController *rootViewController;
 
 @end

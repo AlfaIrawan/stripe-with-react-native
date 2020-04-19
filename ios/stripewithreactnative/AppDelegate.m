@@ -3,7 +3,6 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import <Stripe/Stripe.h>
 
 #if DEBUG
 #import <FlipperKit/FlipperClient.h>
@@ -43,10 +42,7 @@ static void InitializeFlipper(UIApplication *application) {
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
-  self.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  [Stripe setDefaultPublishableKey:@"pk_test_0muzBam7ElJOaYb1pGzyhZpV00QceMJWJK"];
-  
   return YES;
 }
 

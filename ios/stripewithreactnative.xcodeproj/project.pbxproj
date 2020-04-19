@@ -19,8 +19,6 @@
 		2DCD954D1E0B4F2C00145EB5 /* stripewithreactnativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* stripewithreactnativeTests.m */; };
 		5651678B4009D779332B8E8A /* libPods-stripewithreactnative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8458A4240D2B2DFA9DE69EAA /* libPods-stripewithreactnative.a */; };
 		675E0A437CF7804273D27E0D /* libPods-stripewithreactnative-stripewithreactnativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5341195A6C2C6B40D439C1DF /* libPods-stripewithreactnative-stripewithreactnativeTests.a */; };
-		C6036E17244C562300FF3AB2 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6036E16244C562300FF3AB2 /* CheckoutViewController.m */; };
-		C6036E1A244C5C6200FF3AB2 /* StripeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = C6036E19244C5C6200FF3AB2 /* StripeBridge.m */; };
 		D81CDD81F71D00056A3EC739 /* libPods-stripewithreactnative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE6BFF370C2E3A734FCB337 /* libPods-stripewithreactnative-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,10 +60,6 @@
 		5341195A6C2C6B40D439C1DF /* libPods-stripewithreactnative-stripewithreactnativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stripewithreactnative-stripewithreactnativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8458A4240D2B2DFA9DE69EAA /* libPods-stripewithreactnative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stripewithreactnative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A74C13A4132EC261A59DC7 /* Pods-stripewithreactnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripewithreactnative.release.xcconfig"; path = "Target Support Files/Pods-stripewithreactnative/Pods-stripewithreactnative.release.xcconfig"; sourceTree = "<group>"; };
-		C6036E16244C562300FF3AB2 /* CheckoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
-		C6036E18244C567400FF3AB2 /* CheckoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
-		C6036E19244C5C6200FF3AB2 /* StripeBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripeBridge.m; sourceTree = "<group>"; };
-		C6036E1B244C5C8C00FF3AB2 /* StripeBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StripeBridge.h; sourceTree = "<group>"; };
 		C647145F70D496B87CAA8FAA /* Pods-stripewithreactnative-stripewithreactnativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripewithreactnative-stripewithreactnativeTests.release.xcconfig"; path = "Target Support Files/Pods-stripewithreactnative-stripewithreactnativeTests/Pods-stripewithreactnative-stripewithreactnativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6E00E5D9D57F46A500DBB5A /* libPods-stripewithreactnative-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stripewithreactnative-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F38F5FF04B926C4A23385D /* Pods-stripewithreactnative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripewithreactnative-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-stripewithreactnative-tvOSTests/Pods-stripewithreactnative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,14 +128,10 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				C6036E19244C5C6200FF3AB2 /* StripeBridge.m */,
-				C6036E1B244C5C8C00FF3AB2 /* StripeBridge.h */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				C6036E16244C562300FF3AB2 /* CheckoutViewController.m */,
-				C6036E18244C567400FF3AB2 /* CheckoutViewController.h */,
 			);
 			name = stripewithreactnative;
 			sourceTree = "<group>";
@@ -429,13 +419,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-stripewithreactnative/Pods-stripewithreactnative-resources.sh",
-				"${PODS_ROOT}/Stripe/InternalFrameworks/Stripe3DS2.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Stripe3DS2.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Stripe.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,13 +439,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-stripewithreactnative-stripewithreactnativeTests/Pods-stripewithreactnative-stripewithreactnativeTests-resources.sh",
-				"${PODS_ROOT}/Stripe/InternalFrameworks/Stripe3DS2.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Stripe3DS2.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Stripe.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -582,9 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				C6036E1A244C5C6200FF3AB2 /* StripeBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				C6036E17244C562300FF3AB2 /* CheckoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
